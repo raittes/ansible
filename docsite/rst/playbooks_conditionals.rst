@@ -5,7 +5,7 @@ Conditionals
 
 
 Often the result of a play may depend on the value of a variable, fact (something learned about the remote system), 
-or previous task result.  In some cases, the values of variables may depend on other variables.  
+or previous task result.  In some cases, the values of variables may depend on other variables.  s
 Further, additional groups can be created to manage hosts based on
 whether the hosts match other criteria.   There are many options to control execution flow in Ansible.
 
@@ -47,7 +47,7 @@ decide to do something conditionally based on success or failure::
       - command: /bin/something
         when: result|failed
       - command: /bin/something_else
-        when: result|succeeded
+        when: result|success
       - command: /bin/still/something_else
         when: result|skipped
 
